@@ -1,7 +1,7 @@
 
 body {
-    background-color: steelblue ; 
-    color: yellow;
+    background-color: grey ; 
+    color: greydark;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -21,3 +21,8 @@ body {
     flex-direction: column;
     justify-content: center;
 }   
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+}
