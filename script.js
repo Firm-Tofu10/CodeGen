@@ -13,8 +13,8 @@ const GeneratorWithSymbols = document.createElement
 const form = document.getElementById('passwordGeneratorForm')
 const passwordDisplay = document.getElementById('passwordDisplay')
 
-const LOWERCASE_CHAR_CODES = arrayFormLowToHigh(65, 90)
-const UPPERCASE_CHAR_CODES = arrayFormLowToHigh(97, 122)
+const UPPERCASE_CHAR_CODES = arrayFormLowToHigh(65, 90)
+const LOWERCASE_CHAR_CODES = arrayFormLowToHigh(97, 122)
 const NUMBER_CHAR_CODES = arrayFormLowToHigh(48, 57)
 const SYMBOLE_CHAR_CODES = arrayFormLowToHigh(33, 47).concat(
     arrayFormLowToHigh(58, 64)
