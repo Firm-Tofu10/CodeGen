@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"defer></script>
     <link rel="stylesheet" href="./styles.css"  />
     <title>Code Generator</title>
 </head>  
 <body>
     <div class="container">  
     <h1 class="title">Code Generator</h1>
-    <h3 class="password-display" id="passwordDisplay">code</h3>
-    <form id GenForm class="form"><button type="submit">Generate Code</button> </form>
-    <form id GenForm class="form">
+    <h3 class="password-display" id="passwordDisplay">Code Will Be Here</h3>
+        <form id GenForm class="form">
+            <button type="submit" class="btn">Generate Code</button> </form>       
         
-        <label for="">Number Of Characters:</label>
-        <input type="Number" min="4" max="40" value="8" id="NumberOfCharacters">
+            <label for="">CharactersAmountNumber:</label>
+        <div class="character-amount-container">
+            <input type="range"min="1" max="30" value="8" id="CharacterAmountRange">
+            <input class="number-input" type="Number" min="4" max="30" value="8" id="CharactersAmountNumber">
         
-        <label for="Uppercase">Generate With Uppercase</label>
-        <input type="checkbox" id="Uppercase">
+            <label for="withUppercase">Generate With Uppercase</label>
+            <input type="checkbox" id="withUppercase">
     
-        <label for="Number">Generate With Numbers</label>
-        <input type="checkbox" id="Number">
+            <label for="withNumbers">Generate With Numbers</label>
+            <input type="checkbox" id="withNumbers">
     
-        <label for="Symbols">Generate With Symbols</label>
-        <input type="checkbox" id="Symbols">
-    </form>
+            <label for="withSymbols">Generate With Symbols</label>
+            <input type="checkbox" id="Symbols">           
+        </form>
     </div>
-    <script src="script.js"defer></script>
 </body>
 
 </html>
