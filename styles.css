@@ -33,7 +33,9 @@ body {
 }
 
 .number-input{
-    white: 3rem;
+    width: 3rem;
+    height: 25px;
+    width: 60px;
 }
 
 .password-display{
@@ -59,6 +61,10 @@ body {
     height: 25px;
 }
 .character-amount-container{
-    display: grid;
+    display: flex;
 
+}
+
+.includeUppercase {
+ text-align: center;   
 }
