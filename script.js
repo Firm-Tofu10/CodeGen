@@ -6,6 +6,8 @@ const withSymbolsElement = document.getElementById('withSymbols')
 const form = document.getElementById('passwordGeneratorForm')
 const passwordDisplay = document.getElementById('passwordDisplay')
 
+(//) I tryed to use var at the beginning honestly still not sure why that didn't work work but const did?
+
 const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
 const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
 const NUMBER_CHAR_CODES = arrayFromLowToHigh(48, 57)
@@ -36,6 +38,8 @@ function generatePassword(characterAmount, withUppercase, withNumbers, withSymbo
   if (withSymbols) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)
   if (withNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
   
+  (//) CHAR_CODES we by far more easy then righting an array I tyred that my first couple attempts but found this to be a great solution. https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+
   const passwordCharacters = []
   for (let i = 0; i < characterAmount; i++) {
     const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
